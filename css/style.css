@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* common css */
@@ -14,13 +15,23 @@
     color: white;
     border: none;
     border-radius: 50px;
-    padding: 15px 36px;
+    padding: 15px 30px;
     font-size: 20px;
     font-weight: bold;
 }
 .panda-btn:hover{
     background-color: #FF4401;
 }
+
+.common-section-title{
+    font-weight: 600px;
+    font-size: 46px;
+    /* padding-left: 26px; */
+    text-align: center;
+}
+
+/* 
+======================== */
 
 nav {
     display: flex;
@@ -104,28 +115,44 @@ nav {
 
 .banner-price {
     color: #FF136E;
-    font-size: 80px;
+    font-size: 65px;
     font-weight: bold;
     display: block;
     margin-bottom: 0px;
 }
 
 /* category section  */
-
+.categories{
+    margin: 64px auto;
+}
 .categories-card-container{
     display: flex;
+    background-color: #fafafa;
+    padding: 20px;
     gap: 26px;
     width: 100%;
     
 }
 .category-card{
-    background-color: #FFD019;
+    /* background-color: #FFD019; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     border-radius: 10px;
     /* gap: 4px; */
+    flex: 1;
+}
+
+/* for categories bg-color */
+.category-card:nth-child(1){
+    background-color: #FFD019;
+}
+.category-card:nth-child(2){
+    background-color: #FF428D;
+}
+.category-card:nth-child(3){
+    background-color: #4035FA;
 }
 .category-card h3{
     color: white;
@@ -133,3 +160,78 @@ nav {
     font-size: 30px;
 }
 
+/* shoes */
+.shoes-backpack-parent{
+    background-color: #F3F3F3;
+}
+.shoes-backpack-section-title-parent{
+    display: flex;
+    justify-content: space-between;
+}
+.shoes-backpack-section-title-parent h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+.shoes-backpack-section-title-parent p{
+    font-size: 20px;
+    color: #ff9f05;
+}
+.shoes-section{ 
+   padding: 50px 0px;
+}
+.shoe-card-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.shoe-card{
+background-color: white;
+border-radius: 10px;
+text-align: center;
+padding: 25px;
+}
+
+.shoe-card img{
+width: 336px;
+height: 282px;
+}
+
+.card-price{
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 12px;
+}
+.shoe-card .panda-btn{
+    background-color: black;
+}
+.shoe-card .panda-btn:hover{
+    background-color: #FF136E;
+}
+.shoe-card p{
+}
+
+/* contact us */
+
+.contact-us-parent{
+    background-color: #b4aca9;
+    text-align: center;
+    padding: 35px 15px;
+    margin: 35px auto;
+}
+
+.contact-inp-btn-parent input{
+    border: none;
+    padding: 10px 152px;
+    border-radius: 10px;
+}
+
+.contact-inp-btn-parent{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.contact-inp-btn-parent .panda-btn{
+    border-radius: 50px 20px;
+}
