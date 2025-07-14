@@ -37,8 +37,34 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 2px 0px;
+}
+
+.product-li{
+    position: relative;
+}
+
+.dropdown-nav-items{
+    position: absolute;
+    list-style: none;
+    background-color: #f5f0ef;
+    width: 120px;
+    border-radius: 0 15px;
+    top: 100%;
+    left: -50px;
+    padding: 5px 0px;
+    text-align: center;
+    box-shadow: 2px 0px 8px 0px rgb(201, 137, 20);
+    visibility: hidden;
+    transition: 02s;
+}
+.product-li:hover .dropdown-nav-items{
+    visibility: visible;
     
 }
+.dropdown-nav-items li{
+    margin: 5px 0;
+}
+
 
 .search-parent {
     position: relative;
@@ -189,6 +215,7 @@ background-color: white;
 border-radius: 10px;
 text-align: center;
 padding: 25px;
+box-shadow: 2px 0px 8px 0px;
 }
 
 .shoe-card img{
