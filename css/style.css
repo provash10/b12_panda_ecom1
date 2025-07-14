@@ -1,30 +1,49 @@
-
-*{
+* {
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
+
 /* common css */
-.container{
+.container {
     max-width: 1280px;
     margin: auto;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
+.panda-btn {
+    background-color: #FF2279;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 36px;
+    font-size: 20px;
+    font-weight: bold;
 }
-.search-parent{
-    position: relative;
-    color: #bababa;
+.panda-btn:hover{
+    background-color: #FF4401;
 }
 
-.search-parent input{
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 0px;
+    
+}
+
+.search-parent {
+    position: relative;
+    color: #bababa;
+    margin-top: 10px;
+}
+
+.search-parent input {
     border-radius: 66px;
     padding: 15px 30px;
     width: 400px;
     background-color: rgb(245, 234, 234);
     border: none;
 }
-.search-parent i{
+
+.search-parent i {
     position: absolute;
     top: 12px;
     right: 25px;
@@ -32,42 +51,85 @@ nav{
     font-size: 25px;
 }
 
-.nav-items{
+.nav-items {
     display: flex;
-    gap: 40px;
+    gap: 30px;
+    padding-right: 35px;
+    align-items: center;
 }
-.nav-items li{
+
+.nav-items li {
     list-style: none;
 }
-.nav-items li a{
+
+.nav-items li a {
     text-decoration: none;
     color: black;
     font-size: 16px;
     font-weight: bold;
 }
-  
+
 /* banner */
-.banner{
+.banner {
     background-color: #FEEAE9;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     gap: 5px;
     align-items: center;
+    padding: 25px;
+    border-radius: 25px;
+    margin-top: 25px;
 }
-.banner img{
+
+.banner img {
     width: 482px;
     height: 378px;
 }
 
-.banner h2{
+.banner h1 {
     color: #1F1F1F;
+    width: 560px;
     /* font-family: Poppins; */
-    font-size: 56px;
-    font-weight: 700;
+    font-size: 43px;
+    font-weight: 600;
     /* line-height: 84px; */
     /* letter-spacing: 0; */
     /* text-align: left; */
 }
-.banner p{
+
+.banner p {
     color: #4e4e4e;
+    max-width: 400px;
 }
+
+.banner-price {
+    color: #FF136E;
+    font-size: 80px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0px;
+}
+
+/* category section  */
+
+.categories-card-container{
+    display: flex;
+    gap: 26px;
+    width: 100%;
+    
+}
+.category-card{
+    background-color: #FFD019;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    /* gap: 4px; */
+}
+.category-card h3{
+    color: white;
+    font: bold;
+    font-size: 30px;
+}
+
